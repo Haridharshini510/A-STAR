@@ -1,6 +1,6 @@
 <h1>ExpNo 4 : Implement A* search algorithm for a Graph</h1> 
-<h3>Name:       </h3>
-<h3>Register Number:           </h3>
+<h3>Name: Haridharshini J       </h3>
+<h3>Register Number: 212224040098       </h3>
 <H3>Aim:</H3>
 <p>To ImplementA * Search algorithm for a Graph using Python 3.</p>
 <H3>Algorithm:</H3>
@@ -50,8 +50,8 @@
 
 ``````
 <H3>Program:</H3>
-```
 
+```
 from collections import defaultdict
 H_dist ={}
 def aStarAlgo(start_node, stop_node):
@@ -95,7 +95,6 @@ def aStarAlgo(start_node, stop_node):
        if n == None:
            print('Path does not exist!')
            return None
-       
        # if the current node is the stop_node
        # then we begin reconstructin the path from it to the start_node
        if n == stop_node:
@@ -113,7 +112,6 @@ def aStarAlgo(start_node, stop_node):
        closed_set.add(n)
    print('Path does not exist!')
    return None
-
 #define fuction to return neighbor and its distance
 #from the passed node
 def get_neighbors(v):
@@ -123,8 +121,6 @@ def get_neighbors(v):
        return None
 def heuristic(n):
    return H_dist[n]
-
-
 graph = defaultdict(list)
 n,e = map(int,input().split())
 for i in range(e):
